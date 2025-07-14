@@ -1,13 +1,13 @@
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View, TextProps } from "react-native";
 import {Plus} from "lucide-react-native"
-type Props = {
+type Props = TextProps & {
   title: string;
   showButton?: boolean;
 };
-export function Header({ title, showButton }: Props) {
+export function Header({ title, showButton, ...rest }: Props) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.title} {...rest}>{title}</Text>
       {showButton && <TouchableOpacity>
         <Plus size={32} color="#333" />
       </TouchableOpacity>}

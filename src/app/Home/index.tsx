@@ -6,6 +6,7 @@ import { FilterStatus } from "@/types/FilterStatus";
 import { Filter } from "@/components/Filter";
 import { Card } from "@/components/Card";
 
+// Aqui definimos os status de filtro disponíveis
 const FILTER_STATUS: FilterStatus[] = [FilterStatus.PENDING, FilterStatus.DONE];
 
 const sections = [
@@ -16,77 +17,7 @@ const sections = [
         id: "1",
         status: FilterStatus.PENDING,
         description: "Example Task 1",
-      },
-      {
-        id: "2",
-        status: FilterStatus.DONE,
-        description: "Example Task 2",
-      },
-      {
-        id: "3",
-        status: FilterStatus.PENDING,
-        description: "Example Task 3",
-      },
-    ],
-  },
-  {
-    dataCreate: "14/10/2025",
-    data: [
-      {
-        id: "4",
-        status: FilterStatus.DONE,
-        description: "Example Task 4",
-      },
-      {
-        id: "5",
-        status: FilterStatus.PENDING,
-        description: "Example Task 5",
-      },
-    ],
-  },
-  {
-    dataCreate: "15/10/2025",
-    data: [
-      {
-        id: "6",
-        status: FilterStatus.DONE,
-        description: "Example Task 6",
-      },
-      {
-        id: "7",
-        status: FilterStatus.PENDING,
-        description: "Example Task 7",
-      },
-    ],
-  },
-  {
-    dataCreate: "12/10/2025",
-    data: [
-      {
-        id: "6",
-        status: FilterStatus.DONE,
-        description: "Example Task 6",
-      },
-      {
-        id: "7",
-        status: FilterStatus.PENDING,
-        description: "Example Task 7",
-      },
-    ],
-  },
-  {
-    dataCreate: "16/10/2025",
-    data: [
-      {
-        id: "8",
-        status: FilterStatus.DONE,
-        description: "Example Task 8",
-      },
-      {
-        id: "9",
-        status: FilterStatus.PENDING,
-        description: "Example Task 9",
-      },
+      }
     ],
   },
 ];

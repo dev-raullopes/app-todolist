@@ -1,12 +1,14 @@
-import { StyleSheet, TextInput } from "react-native";
+import { StyleSheet, TextInput, TextInputProps } from "react-native";
 
 
-export function SearchInput(){
+
+export function SearchInput({...rest}: TextInputProps) {
     return (
         <TextInput 
         style={styles.container}
         placeholder="Buscar tarefa..."
         placeholderTextColor="#616060"
+        {...rest}
         />
     )
 }
